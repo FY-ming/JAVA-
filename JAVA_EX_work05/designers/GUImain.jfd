@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"title": "档案系统菜单页面"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Menu"
+				"text": "档案系统"
+				"verticalAlignment": 1
+				"horizontalAlignment": 0
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 15, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 400
+				"height": 55
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "User"
+				"text": "用户名："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 70
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "key"
+				"text": "密码："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 130
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "register"
+				"text": "登录"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "register", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 165
+				"y": 180
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "password"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 120
+				"y": 125
+				"width": 160
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textUserName"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 120
+				"y": 65
+				"width": 160
+				"height": 40
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
